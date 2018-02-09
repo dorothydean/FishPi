@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Faq";
+}
+
+<h2>Frequently Asked Questions</h2>
+<div>
+	<br />
+	<h3>Nei's Equation</h3>
+	<div>
+		<h4>What does this tool do?</h4>
+		<p>
+			This tool calculates nucleotide diversity, or pi (\pi), a statistic commonly used in population or molecular genetics.
+			This measurement was formally developed by <a href="http://pnas.org/content/76/10/5269">Nei and Li in 1979. </a>
+		</p>
+		<p>Additional information- <a href="https://doi.org/10.1073%2Fpnas.76.10.5269">Mathematical model for studying genetic variation in terms of restriction endonucleases</a></p>
+	</div>
+	<div>
+		<h4>Why do we need it?</h4>
+		<p>
+			Nucleotide diversity has become a fundamental statistic used to describe the genetic variability of a population of organisms.
+			This is important because genetic variability is an indication of mutation, and monitoring changes in \pi can provide insight on evolutionary change, including important processes like speciation or adaptation.
+		</p>
+	</div>
+
+	<div>
+		<h4>Aren't there other tools to calculate this?</h4>
+		<p>While \pi is widely used, it has become so fundamental that it is usually computed as part of other calculations and not reported directly by 
+		other bioinformatics platforms. This tool provides a simple dedicated way to calculate \pi for a specific set of samples that you submit. 
+		The most commonly reported \pi values are calculated on the number of nucleotide differences among a set of samples. 
+		This is the primary value returned by this platform, but % difference is also returned. 
+		Your data is input as two files: <a href="https://en.wikipedia.org/wiki/FASTA_format">fasta formatted sequence files</a>, and <a href="https://en.wikipedia.org/wiki/Comma-separated_values">comma-separated formatted pairwise identity matrix</a>.
+		</p>
+
+	<div>
+		<h4>Are there limitations to this tool?</h4>
+		<p>It is important to note that the simple implementation of the above formula in this tool was designed for viral sequence data and is therefore is not appropriate for data from diploid (or polyploid) organisms.
+		</p>
+	</div>
+</div>
+<br />
+<div>
+	<br />
+	<h3>Technical Information</h3>
+	<div>
+		<h4>Can other people access my data?</h4>
+		<p>
+			No.  Each user has a unique user ID and their results are only available to them or their supervisor.
+		</p>
+	</div>
+	<div>
+		<h4>What format do my files need to be in?</h4>
+		<p>Right now, this tool only accepts text (.txt) files.  We plan to accept CSV files in the future.</p>
+	</div>
+	<div>
+		<h4>I have multiple grad students working under me.  Will I be able to see the calculations my students run?</h4>
+		<p>
+			When you register for an account, you will be able to indicate if you are a supervisor or a student.
+			If you are a supervisor, your students' calculations will appear on your profile page.
+			If you are a student, you will be able to see your own calculations on your profile page but will not have access to anyone else's.
+		</p>
+	</div>
+	<div>
+		<h4>Will you store my files?</h4>
+		<p>Yes.  All text files will be stored on our server for you to access whenever you need them.  Links to the files will be displayed in your profile.</p>
+	</div>
+	<div>
+		<h4>Do I have to create an account to run the calculation?</h4>
+		<p>You don't have create an account, however, no data will be stored for you to reference later.</p>
+	</div>
+</div>
+
+

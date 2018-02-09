@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="FishPi.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="5" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="FishPi">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=fishpi;AccountKey=$(_fishpi.key_)" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="d6d7db25-378f-47d4-9579-949c85dd98d7" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
